@@ -1,0 +1,1641 @@
+{
+    "description": "[ + vocal = acento; [ + n = ñ; [ + espacio = [; si [ + shift + espacio = {",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "open_bracket",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 1
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "a" },
+            "to": [
+                {
+                    "key_code": "e",
+                    "modifiers": ["option"]
+                },
+                { "key_code": "a" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "spacebar",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "open_bracket",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "e" },
+            "to": [
+                {
+                    "key_code": "e",
+                    "modifiers": ["option"]
+                },
+                { "key_code": "e" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "i" },
+            "to": [
+                {
+                    "key_code": "e",
+                    "modifiers": ["option"]
+                },
+                { "key_code": "i" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "o" },
+            "to": [
+                {
+                    "key_code": "e",
+                    "modifiers": ["option"]
+                },
+                { "key_code": "o" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "u" },
+            "to": [
+                {
+                    "key_code": "e",
+                    "modifiers": ["option"]
+                },
+                { "key_code": "u" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "n" },
+            "to": [
+                {
+                    "key_code": "n",
+                    "modifiers": ["option"]
+                },
+                { "key_code": "n" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "a",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "e",
+                    "modifiers": ["option"]
+                },
+                {
+                    "key_code": "a",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "e",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "e",
+                    "modifiers": ["option"]
+                },
+                {
+                    "key_code": "e",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "i",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "e",
+                    "modifiers": ["option"]
+                },
+                {
+                    "key_code": "i",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "o",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "e",
+                    "modifiers": ["option"]
+                },
+                {
+                    "key_code": "o",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "u",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "e",
+                    "modifiers": ["option"]
+                },
+                {
+                    "key_code": "u",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "n",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "n",
+                    "modifiers": ["option"]
+                },
+                {
+                    "key_code": "n",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "spacebar" },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "b" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "b" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "c" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "c" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "d" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "d" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "f" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "f" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "g" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "g" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "h" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "h" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "j" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "j" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "k" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "k" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "l" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "l" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "m" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "m" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "p" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "p" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "q" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "q" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "r" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "r" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "s" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "s" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "t" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "t" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "v" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "v" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "w" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "w" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "x" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "x" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "y" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "y" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "z" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "z" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "b",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "b",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "c",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "c",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "d",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "d",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "f",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "f",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "g",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "g",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "h",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "j",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "k",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "k",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "l",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "l",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "m",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "m",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "p",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "p",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "q",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "q",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "r",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "r",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "s",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "s",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "t",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "t",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "v",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "v",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "w",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "w",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "x",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "x",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "y",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "y",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "z",
+                "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                { "key_code": "open_bracket" },
+                {
+                    "key_code": "z",
+                    "modifiers": ["shift"]
+                },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "1" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "1" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "2" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "2" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "3" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "3" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "4" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "4" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "5" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "5" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "6" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "6" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "7" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "7" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "8" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "8" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "9" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "9" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "accent_bracket",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "0" },
+            "to": [
+                { "key_code": "open_bracket" },
+                { "key_code": "0" },
+                {
+                    "set_variable": {
+                        "name": "accent_bracket",
+                        "value": 0
+                    }
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
